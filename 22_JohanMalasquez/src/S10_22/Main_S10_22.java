@@ -21,16 +21,6 @@ public class Main_S10_22 {
         masajista1.concentrarse();
 
         // CONCENTRACION
-        System.out.println("Todos los integrantes comienzan una concentracion. (Todos ejecutan el mismo método)");
-            for (SeleccionFutbol integrante : integrantes) {
-	System.out.print(integrante.getNombre()+" "+integrante.getApellidos()+" -> ");
-	integrante.Concentrarse();
-            }
 
-            // VIAJE
-           System.out.println("Todos los integrantes viajan para jugar un partido. (Todos ejecutan el mismo método)");
-            for (SeleccionFutbol_22 integrante : integrantes) {
-	System.out.print(integrante.getNombre()+" "+integrante.getApellidos());
-            }
     }
 }
