@@ -24,4 +24,8 @@ public class Profesor_22_E01 extends Persona_22_E01 {
     public void enseñar() {
         System.out.println(nombre + " está enseñando " + materia);
     }
+    
+    public void años() {
+        System.out.println("mis años de experiencia son de " + expereciencia);
+    }
 }

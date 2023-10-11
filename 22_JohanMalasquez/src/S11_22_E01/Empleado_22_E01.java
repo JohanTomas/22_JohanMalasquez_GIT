@@ -24,4 +24,8 @@ public class Empleado_22_E01 extends Persona_22_E01 {
     public void trabajar() {
         System.out.println(nombre + " trabaja como " + cargo);
     }
+    
+    public void empleado() {
+        System.out.println("el empleado es un " + genero + " y se llamada" + nombre);
+    }
 }

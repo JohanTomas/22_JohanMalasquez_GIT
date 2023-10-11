@@ -18,14 +18,17 @@ public class Main_S11_E01 {
         estudiante.saludar();
         estudiante.mostrarEdad();
         estudiante.estudiar();
+        estudiante.orden();
 
         profesor.saludar();
         profesor.mostrarEdad();
         profesor.enseñar();
+        profesor.años();
 
         empleado.saludar();
         empleado.mostrarEdad();
         empleado.trabajar();
+        empleado.empleado();
      
      }
 }

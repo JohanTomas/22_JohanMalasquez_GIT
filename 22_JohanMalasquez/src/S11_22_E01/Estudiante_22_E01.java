@@ -20,8 +20,12 @@ public class Estudiante_22_E01 extends Persona_22_E01 {
         this.numeroDeorden = numeroDeorden;
         this.ciclo = ciclo;
     }
-     
+    
     public void estudiar() {
         System.out.println(nombre + " está estudiando en " + institucion);
+    }
+    
+    public void orden() {
+        System.out.println("mi numero de orden es " + numeroDeorden);
     }
 }
