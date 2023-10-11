@@ -7,12 +7,12 @@ package S11_22_E02;
  */
 public class Policia_22_E02 extends Persona_22_E02{
     
-    //ATRIBUTOS
+    //Atributos
     private String rango;
     private int añosServicio;
     private String departamento;
     
-    //METODOS
+    //Metodos
     public Policia_22_E02(String rango, int añosServicio, String departamento, String nombre, int edad) {
         super(nombre, edad);
         this.rango = rango;
@@ -20,8 +20,6 @@ public class Policia_22_E02 extends Persona_22_E02{
         this.departamento = departamento;
     }
 
-    
-    
     public void patrullar() {
         System.out.println( nombre + " es un oficial de policia del departamento de " + departamento);
     }
@@ -29,4 +27,5 @@ public class Policia_22_E02 extends Persona_22_E02{
     public void verañosServicio() {
         System.out.println("Años de servicio de " + nombre + " : " + añosServicio);
     }
+    
 }

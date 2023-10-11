@@ -7,13 +7,12 @@ package S11_22_E02;
  */
 public class Atleta_22_E02 extends Persona_22_E02 {
     
-    //ATRIBUTOS
+    //Atributos
     private String deporte;
     private int medallas;
     private int altura;
     
-    //METODOS
-
+    //Metodos
     public Atleta_22_E02(String deporte, int medallas, int altura, String nombre, int edad) {
         super(nombre, edad);
         this.deporte = deporte;
