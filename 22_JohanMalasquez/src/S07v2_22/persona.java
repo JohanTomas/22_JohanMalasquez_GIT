@@ -2,11 +2,11 @@
 package S07v2_22;
 
 public class persona {
-      String nombre;
+    String nombre;
     int edad;
     String sexo;
     
-    //metodos
+    //METODOS - SOBRECARGA DE METODOS
     public void  dormir() {
         System.out.println("Quiero dormir");
     }
@@ -18,27 +18,25 @@ public class persona {
         System.out.println("Hombres");
     }
      
-    //metodo de retorno
+    //METODO DE RETORNO
     public void correr() {
     }
     
-    public void correr(int a) {
-    }
-    
     public int añ0(){
-    return 18;
+        return 18;
     }
     
     public String nombre() {
-    return "Jvalerius";
+        return "Jvalerius";
     }
     public float num() {
-    return 12.2f;
+        return 12.2f;
     }
     
-    //metodo de argumento y parametro
+    //METODO CON PARAMETORS Y ARGUMENTOS
     public void metodo1(int a) {
     }
+    
      public void metodo1(String a) {
     } 
 }
