@@ -4,6 +4,7 @@ package S06_22;
 import java.util.Scanner;
 
 public class calculadora_22 {
+    //ATRIBUTOS
     int a;
     int b;
     int totalsuma;
@@ -11,6 +12,29 @@ public class calculadora_22 {
     int totalmultiplicar;
     int totaldivision;
     
+    //SOBRECARGA DE CONSTRUCTORES
+    public calculadora_22(int a, int b, int totalsuma, int totalresta, int totalmultiplicar, int totaldivision) {
+        this.a = a;
+        this.b = b;
+        this.totalsuma = totalsuma;
+        this.totalresta = totalresta;
+        this.totalmultiplicar = totalmultiplicar;
+        this.totaldivision = totaldivision;
+    }
+
+    public calculadora_22(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    public calculadora_22(int totalsuma, int totalresta, int totalmultiplicar, int totaldivision) {
+        this.totalsuma = totalsuma;
+        this.totalresta = totalresta;
+        this.totalmultiplicar = totalmultiplicar;
+        this.totaldivision = totaldivision;
+    }   
+    
+    //METODOS / SOBRECARGA DE METODO
     public void sumar() {
         totalsuma = a + b;
         System.out.println(totalsuma);
@@ -33,6 +57,11 @@ public class calculadora_22 {
         } else {
             System.out.println("Error: No se puede dividir por cero.");
         }
+    }
+    
+    //METODO CON VALOR DE RETORNO
+    public int variable() {
+        return a + b;
     }
     
     public void preguntar() {

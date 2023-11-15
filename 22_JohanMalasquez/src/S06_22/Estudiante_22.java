@@ -4,16 +4,44 @@ package S06_22;
 import java.util.Scanner;
 
 public class Estudiante_22 {
-     String nombre;
+    //ATRIBUTOS
+    String nombre;
     int edad;
+
+    //SOBRECARGA DE CONSTRUCTORES
+    public Estudiante_22(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
     
-    //metodos
+    public Estudiante_22(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Estudiante_22(int edad) {
+        this.edad = edad;
+    }
+    
+    //METODOS / SOBRECARGA DE METODO
     public void hablar() {
         System.out.println(nombre + "Que sale causa!! gaaaaaaaaaaaa");
     }
     
     public void orden() {
         System.out.println(nombre + "levanto la mano");
+    }
+    
+    public void edad() {
+        System.out.println("Mie edad es " + edad);
+    }
+    
+    //METODO CON VALORES DE RETORNO
+    public int dobleEdad() {
+        return 2 * edad;
+    }
+    
+    public String registro() {
+        return nombre + edad;
     }
     
     public void preguntar() {
