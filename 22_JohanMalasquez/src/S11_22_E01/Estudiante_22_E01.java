@@ -12,7 +12,7 @@ package S11_22_E01;
 public class Estudiante_22_E01 extends Persona_22_E01 {
       private String institucion;
       private int numeroDeorden;
-      private   int ciclo;
+      private int ciclo;
 
     public Estudiante_22_E01(String institucion, int numeroDeorden, int ciclo, String Nombre, int edad) {
         super(Nombre, edad);

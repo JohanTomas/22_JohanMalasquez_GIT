@@ -2,7 +2,6 @@
 package S08_22;
 
 public class personas1 {
-    // METODO CON PARAMETRO
     public void saludar(String nombre, String apellido) {
         System.out.println("Mi nombre es " + nombre + " y mi apellido es " + apellido);
     }
