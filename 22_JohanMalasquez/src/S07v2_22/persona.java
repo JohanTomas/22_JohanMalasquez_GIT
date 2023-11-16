@@ -4,22 +4,28 @@ package S07v2_22;
 public class persona {
     String nombre;
     int edad;
-    String sexo;
     
-    //METODOS - SOBRECARGA DE METODOS
+    //METODOS
     public void  dormir() {
-        System.out.println("Quiero dormir");
+        System.out.println("Quiero dormir" + nombre);
     }
     
-    public  void hablar () {
-        System.out.println("hola");
+    public void hablar () {
+        System.out.println("hola" + nombre + " y tengo " + edad);
     }
-    public void genero() {
-        System.out.println("Hombres");
+    
+    //SOBRECARGAR DE METODO
+    public void dormir(int hora){
+        System.out.println("Yo duermo " + hora + "horas");
+    }
+    
+    public void hablar(String xpersona){
+        System.out.println("Un gusto conocerte " + xpersona);
     }
      
     //METODO DE RETORNO
     public void correr() {
+        return;
     }
     
     public int añ0(){
@@ -29,14 +35,13 @@ public class persona {
     public String nombre() {
         return "Jvalerius";
     }
-    public float num() {
-        return 12.2f;
-    }
     
     //METODO CON PARAMETORS Y ARGUMENTOS
     public void metodo1(int a) {
+        System.out.println("Parametro con entero " + a);
     }
     
      public void metodo1(String a) {
+         System.out.println("Parametro con cadena de texto " + a);
     } 
 }

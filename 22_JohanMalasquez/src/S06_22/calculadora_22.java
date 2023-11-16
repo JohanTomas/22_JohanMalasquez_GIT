@@ -34,7 +34,7 @@ public class calculadora_22 {
         this.totaldivision = totaldivision;
     }   
     
-    //METODOS / SOBRECARGA DE METODO
+    //METODOS
     public void sumar() {
         totalsuma = a + b;
         System.out.println(totalsuma);
@@ -57,6 +57,17 @@ public class calculadora_22 {
         } else {
             System.out.println("Error: No se puede dividir por cero.");
         }
+    }
+    
+    // SOBRECARGA DE METODO
+    public void sumar(int numero, int numero2){
+        int resultado = numero + numero2;
+        System.out.println("la suma de " + numero + " y " + numero2 + " es : " + resultado );
+    }
+    
+    public void restar(int numero, int numero2){
+        int resultado = numero - numero2;
+        System.out.println("la suma de " + numero + " y " + numero2 + " es : " + resultado );
     }
     
     //METODO CON VALOR DE RETORNO

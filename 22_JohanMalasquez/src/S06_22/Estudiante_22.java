@@ -22,7 +22,7 @@ public class Estudiante_22 {
         this.edad = edad;
     }
     
-    //METODOS / SOBRECARGA DE METODO
+    //METODOS
     public void hablar() {
         System.out.println(nombre + "Que sale causa!! gaaaaaaaaaaaa");
     }
@@ -32,7 +32,20 @@ public class Estudiante_22 {
     }
     
     public void edad() {
-        System.out.println("Mie edad es " + edad);
+        System.out.println("Mi edad es " + edad);
+    }
+    
+    // SOBRECARGA DE METODO
+    public void hablar(String contestar){
+        System.out.println("Vamos a jugar futbol" + contestar);
+    }
+    
+    public void orden(String profesor){
+        System.out.println("Contesta estas preguntas y precisas" + profesor);
+    }
+    
+    public void edad(int años){
+        System.out.println("Cuantos años de experiencias tienes " + años);
     }
     
     //METODO CON VALORES DE RETORNO

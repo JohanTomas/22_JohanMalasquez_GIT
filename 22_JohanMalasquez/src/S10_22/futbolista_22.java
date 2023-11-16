@@ -3,18 +3,18 @@ package S10_22;
 
 public class futbolista_22 extends seleccionFutbol_22 {
 
-//Metodo Constructor
+//METODO DEL CONSTRUCTOR
     public futbolista_22(int dorsal, String demarcacion, int id, String nombre, String apellidos, int edad) {
         super(id, nombre, apellidos, edad);
         this.dorsal = dorsal;
         this.demarcacion = demarcacion;
     }
 
-//atributos
+//ATRIBUTOS
     private int dorsal;
     private String demarcacion;
 
-//metodos
+//METODOS
     public void jugarPartido() {
         System.out.println(getNombre()+" esta jugando Partido");
     }
@@ -23,7 +23,7 @@ public class futbolista_22 extends seleccionFutbol_22 {
         System.out.println(getNombre()+" esta entrenando");
     }
     
-// GET and SET
+// GET and SETTER
 
     public int getDorsal() {
         return dorsal;

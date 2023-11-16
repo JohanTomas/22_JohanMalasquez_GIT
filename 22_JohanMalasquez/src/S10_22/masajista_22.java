@@ -13,13 +13,12 @@ public class masajista_22 extends seleccionFutbol_22 {
         this.aniosExperiencia = aniosExperiencia;
     }
 
-//atributos
+//ATRIBUTOS
     private String titulacion;
     private int aniosExperiencia;
 
    
-//metodos
-
+//METODOS
     public void darMasaje() {
         System.out.println(nombre + " da masajes");
     }

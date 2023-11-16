@@ -4,7 +4,7 @@ package S10_22;
 public class seleccionFutbol_22 {
 
 //CLASE PADRE
-//Metodo constructor
+//METODO DEL CONSTRUCTOR
 
     public seleccionFutbol_22(int id, String nombre, String apellidos, int edad) {
         this.id = id;
@@ -15,13 +15,13 @@ public class seleccionFutbol_22 {
     
     
     
-//atributos
+//ATRIBUTOS
     protected int id;
     protected String nombre;
     protected String apellidos;
     protected int edad;
     
-//metodos
+//METODOS
     public void concentrarse() {
         System.out.println(getNombre() + " se esta concentrando ");
     }
@@ -29,7 +29,7 @@ public class seleccionFutbol_22 {
     public void viajar() {
         System.out.println("El viaje comenzo " + getNombre());
     }
-//GET and SET
+//GET and SETTER
     public int getId() {
         return id;
     }
