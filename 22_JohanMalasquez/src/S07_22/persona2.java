@@ -1,25 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package S07_22;
 
-/**
- *
- * @author jvale
- */
 public class persona2 {
-    //METODO CON PARAMETROS
-    public void saludar(String nombre){
-        System.out.println("Hola " + nombre + "....");
+    //ATRIBUTOS
+    String nombre;
+    String apellido;
+    int edad;    
+    
+    //METODO CON VALORES DE RETORNO
+    public int años() {
+        return 2 * edad;
     }
     
-    public void sumar(int a, int b) {
-        int resultado = a + b;
-        System.out.println("La suma de " + a + " y " + b + " es: " + resultado);
+    public String ncompleto(){
+        return nombre + apellido;
     }
     
-    public void datos(String correo, String contraseña){
-        System.out.println("Mi correo es " + correo + " y mi contrasela es " + contraseña);
+    public String respuesta(){
+        return "mi nombre es " + nombre + apellido + " y tengo " + edad;
     }
 }
