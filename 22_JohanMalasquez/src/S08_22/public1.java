@@ -1,8 +1,11 @@
 
 package S08_22;
 
-public class personas1 {
+public class public1 {
+    //ATRIBUTOS
+    //METODOS
     public void saludar(String nombre, String apellido) {
+        //sout + Tab
         System.out.println("Mi nombre es " + nombre + " y mi apellido es " + apellido);
     }
 

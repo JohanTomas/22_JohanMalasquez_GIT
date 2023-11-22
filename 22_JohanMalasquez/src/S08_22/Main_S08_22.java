@@ -1,24 +1,33 @@
 
 package S08_22;
 
-public class Main_S08_22 {
-        public static void main(String[] args) {
-        personas1 p1 = new personas1();
-        personas2 p2 = new personas2();
+public class Main_S08_22 extends protected1 {
+    
+    public Main_S08_22(String nombre) {
+        super(nombre);
+    }
+    public static void main(String[] args) {
+       public1 p1 = new public1();
+       private1 p2 = new private1();
+       protected1 p3 = new protected1("juan");
+       default1 p4 = new default1();
 
-        p1.saludar("Johan", "Malasquez");
-        p1.edad(25);
+       p1.saludar("Johan", "Malasquez");
+       p1.edad(18);
 
-        p2.setNombre("Johan");
-        p2.setApellidos("Malasquez");
-        p2.setEdad(18);
+       p2.setNombre("Johan");
+       p2.setApellidos("Malasquez");
+       p2.setEdad(18);
 
-        p2.saludar();
-        String nombreCompleto = p2.obtenerNombreCompleto("Juan", "Valerio");
-        System.out.println(nombreCompleto);
+       p2.saludar();
+       String nombreCompleto = p2.obtenerNombreCompleto("Juan", "Valerio");
+       System.out.println(nombreCompleto);
 
-        int edad = p2.obtenerEdad(20);
-        System.out.println("Edad: " + edad);
-        
+       int edad = p2.obtenerEdad(20);
+       System.out.println("Edad: " + edad);
+       
+       p3.sonido();
+       
+       p4.experiencia();
     }
 }

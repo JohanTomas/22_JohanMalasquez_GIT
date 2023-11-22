@@ -1,7 +1,7 @@
 
 package S08_22;
 
-public class personas2 {
+public class private1 {
     // ATRIBUTOS
     private String nombre;
     private String apellidos;
