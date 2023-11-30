@@ -1,15 +1,12 @@
 
 package S08_22;
 
-public class Main_S08_22 extends protected1 {
+public class Main_S08_22 extends protected1{
     
-    public Main_S08_22(String nombre) {
-        super(nombre);
-    }
     public static void main(String[] args) {
        public1 p1 = new public1();
        private1 p2 = new private1();
-       protected1 p3 = new protected1("juan");
+       protected1 p3 = new protected1("Perro");
        default1 p4 = new default1();
 
        p1.saludar("Johan", "Malasquez");
@@ -29,5 +26,9 @@ public class Main_S08_22 extends protected1 {
        p3.sonido();
        
        p4.experiencia();
+    }
+
+    public Main_S08_22(String nombre) {
+        super(nombre);
     }
 }

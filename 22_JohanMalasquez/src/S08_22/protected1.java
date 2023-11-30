@@ -9,7 +9,6 @@ public class protected1 {
     }
     
     protected void sonido() {
-        System.out.println("El animal hace un sonido");
+        System.out.println("El animal hace un sonido " + nombre);
     }
-
 }
