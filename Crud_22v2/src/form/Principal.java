@@ -317,9 +317,7 @@ public class Principal extends javax.swing.JFrame {
             con = cn.getConnection();
             st = con.createStatement();
             rs = st.executeQuery(sql);
-            Object[] persona = new Object[6];
-//            String[] Titulos={"ID","DNI","NOMBRES"};         
-//            model=new DefaultTableModel(null,Titulos);   
+            Object[] persona = new Object[3]; 
             model = (DefaultTableModel) TablaDatos.getModel();
             while (rs.next()) {
                 persona[0] = rs.getInt("Id");
@@ -331,7 +329,6 @@ public class Principal extends javax.swing.JFrame {
 
         } catch (Exception e) {
         }
-
     }
 
     void Agregar() {
@@ -353,14 +350,12 @@ public class Principal extends javax.swing.JFrame {
 
         } catch (Exception e) {
         }
-        
-        
     }
 
     void Modificar() {
         String nom = txtNom.getText();
         String tele = txtTele.getText();
-        String sql = "update persona set ,Nombres='" + nom + "',Telefono='" + tele + "' where Id=" + id;
+        String sql = "update persona set Nombres='" + nom + "',Telefono='" + tele + "' where Id=" + id;
         try {
             if (nom != null) {
                 con = cn.getConnection();
@@ -408,8 +403,8 @@ public class Principal extends javax.swing.JFrame {
             model.removeRow(i);
             i = i - 1;
         }
-
     }
+    
     void Actualizar(){
         limpiarTabla(model);
         listar();

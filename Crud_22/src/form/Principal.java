@@ -465,6 +465,7 @@ public class Principal extends javax.swing.JFrame {
         }
 
     }
+    
     void Actualizar(){
         limpiarTabla(model);
         listar();
