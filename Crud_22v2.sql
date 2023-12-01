@@ -1,0 +1,24 @@
+CREATE DATABASE S17v2;
+USE S17v2;
+
+CREATE TABLE persona (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ nombres VARCHAR(50),
+ telefono INT
+);
+
+-- INSERTAR DATOS
+INSERT INTO persona (nombres, telefono)
+VALUES
+	('ANA ROSA', '932263034'),
+	('AGELINE CELESTE', '926602801');
+
+-- LISTAR DATOS
+SELECT * FROM persona;
+
+-- MODIFICAR
+UPDATE persona SET nombres = 'ARIANA
+' WHERE id = 1;
+
+-- ELIMINAR
+DELETE FROM persona WHERE id = 2;
